@@ -1,0 +1,228 @@
+body,
+html {
+	font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+/** Icons fonts =========== */
+
+@font-face {
+	font-family: 'holberton_school-icon';
+	src: url('fonts/holberton_school-icon.eot?sq4eq4');
+	src: url('fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+		url('fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+		url('fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+		url('fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^="holberton_school-icon-"],
+[class*=" holberton_school-icon-"] {
+	font-family: 'holberton_school-icon' !important;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/** Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.holberton_school-icon-menu:before {
+	content: "\e911";
+	font-size: 2rem;
+}
+
+.holberton_school-icon-arrow_3:before {
+	content: "\e902";
+}
+
+.holberton_school-icon-arrow_4:before {
+	content: "\e903";
+}
+
+.holberton_school-icon-ic_facebook:before {
+	content: "\e908";
+}
+
+.holberton_school-icon-ic_instagram:before {
+	content: "\e90a";
+}
+
+.holberton_school-icon-ic_twitter:before {
+	content: "\e90f";
+}
+
+.holberton_school-icon-check:before {
+	content: "\e905";
+}
+
+.holberton_school-icon-search_1:before {
+	content: "\e912";
+}
+
+/** Links =========== */
+
+a.nav-link:hover,
+a.nav-link.active,
+a.nav-link:focus {
+	color: #C271FF !important;
+}
+
+a.nav-link.active {
+	border-bottom: 2px solid #ffffff;
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: relative;
+	right: 0;
+}
+
+/** Buttons =========== */
+
+.btn-radius {
+	background-color: #C271FF;
+	border: none;
+	font-size: 0.8rem;
+	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.btn-radius:hover,
+.btn-radius:focus,
+.btn-radius:active {
+	color: #ffffff !important;
+	background-color: #C271FF !important;
+	opacity: 0.9 !important;
+}
+
+/** Homepage =========== */
+
+.bg {
+	background-image: url("./images/pic_1.jpg");
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.navbar-nav {
+	font-size: 0.76rem;
+}
+
+.font-weight-bold {
+	font-weight: 600 !important;
+}
+
+.text-hex {
+	color: #C271FF !important;
+	font-weight: 700 !important;
+}
+
+.text-color {
+	color: #C271FF;
+}
+
+.bg-hex {
+	background-color: #C271FF;
+}
+
+.bg-hex-dark {
+	background-color: #071629;
+}
+
+/* Pricing page =========== */
+
+.bg-pricing {
+	background-image: url("./images/pic_2.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.text-green {
+	color: #82D24F;
+}
+
+tr.border-bottom {
+	border-bottom: 1px solid #dee2e64a !important;
+}
+
+.mw {
+	max-width: 470px;
+}
+
+/* Courses page =========== */
+
+.bg-courses {
+	background-image: url("./images/pic_3.jpg");
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.coiny {
+	font-family: 'Coiny', sans-serif;
+}
+
+.bg-light {
+	background-color: #f8f9fa4f !important;
+}
+
+.custom-select {
+	background: url(images/down-arrow.png) no-repeat right .75rem center/0.7rem;
+}
+
+.form-control::placeholder {
+	color: #ffffff7a;
+}
+
+/* Media queries =========== */
+
+@media (max-width: 768px) {
+	.carousel-inner {
+		padding: 0 4rem;
+	}
+
+	.text-respon {
+		margin: 0 3rem !important;
+	}
+}
+
+@media (max-width: 576px) {
+	.navbar-nav {
+		font-size: 0.9rem;
+	}
+
+	.navbar-nav .nav-link {
+		padding-bottom: 1rem;
+	}
+
+	a.nav-link.active {
+		border-bottom: none;
+	}
+
+	button:focus {
+		outline: none;
+	}
+
+	.navbar-brand {
+		position: relative;
+		margin: 0 auto;
+		display: inline-grid;
+		justify-items: center;
+	}
+
+	.display-1 {
+		font-size: 5rem !important;
+	}
+
+	.text-respon {
+		margin: 0 9rem !important;
+	}
+
+	.social-nav {
+		justify-content: center !important;
+	}
+}
