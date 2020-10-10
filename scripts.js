@@ -1,5 +1,7 @@
 $(document).ready(function () {
-	$(function quotes() {
+  
+  // Homepage - quotes
+  $(function quotes() {
 		let $quotes = $("#quotes");
 		$.ajax({
 			type: "GET",
@@ -32,6 +34,8 @@ $(document).ready(function () {
 		});
 	});
 
+
+  // Homepage - popular tutorials
 	$(function popularTutorials() {
 		let $popularTutorials = $("#popularTutorials");
 		$.ajax({
@@ -71,11 +75,13 @@ $(document).ready(function () {
 		});
   });
   
+
+  // Homepage - latest videos
   $(function latestVideos() {
     let $latestVideos = $("#latestVideos");
     $.ajax({
       type: "GET",
-      url: "https://smileschool-api.hbtn.info/popular-tutorials",
+      url: "https://smileschool-api.hbtn.info/latest-videos",
       success: function (data) {
         $.each(data, function (i, latestVideos) {
 
