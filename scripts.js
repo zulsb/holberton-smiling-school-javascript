@@ -1,50 +1,50 @@
 $(document).ready(function () {
-  
+
   // Homepage - quotes
   $(function quotes() {
-		let $quotes = $("#quotes");
-		$.ajax({
-			type: "GET",
-			url: "https://smileschool-api.hbtn.info/quotes",
-			success: function (quotes) {
-				$.each(quotes, function (i, quotes) {
-					let a;
-					quotes.id === 2 ? a = "" : a = "active";
+    let $quotes = $("#quotes");
+    $.ajax({
+      type: "GET",
+      url: "https://smileschool-api.hbtn.info/quotes",
+      success: function (quotes) {
+        $.each(quotes, function (i, quotes) {
+          let a;
+          quotes.id === 2 ? a = "" : a = "active";
 
-					$("#quotes").append(
-						`<div class="carousel-item ${a}">
-						<div class="container-fluid">
-						<div class="row">
-						<div class="col-md-3 col-sm-4 d-flex justify-content-center">
-						<img class="rounded-circle mb-3" src="${quotes.pic_url}" width="150" height="150">
-						</div>
-						<div class="col-md-9 col-sm-8">
-						<blockquote class="blockquote">
-						<p class="text-white mb-4">${quotes.text}</p>
-						<p class="font-weight-bold text-white mb-0">${quotes.name}</p>
-						<p class="text-white font-italic font-weight-light ">${quotes.title}</p>
-						</blockquote>
-						</div>
-						</div>
-						</div>
+          $("#quotes").append(
+            `<div class="carousel-item ${a}">
+						  <div class="container-fluid">
+						    <div class="row">
+						      <div class="col-md-3 col-sm-4 d-flex justify-content-center">
+						        <img class="rounded-circle mb-3" src="${quotes.pic_url}" width="150" height="150">
+						      </div>
+                  <div class="col-md-9 col-sm-8">
+                    <blockquote class="blockquote">
+                      <p class="text-white mb-4">${quotes.text}</p>
+                      <p class="font-weight-bold text-white mb-0">${quotes.name}</p>
+                      <p class="text-white font-italic font-weight-light ">${quotes.title}</p>
+                    </blockquote>
+                  </div>
+						    </div>
+						  </div>
 						</div>`
-					)
-				});
-			}
-		});
-	});
+          )
+        });
+      }
+    });
+  });
 
 
   // Homepage - popular tutorials
-	$(function popularTutorials() {
-		let $popularTutorials = $("#popularTutorials");
-		$.ajax({
-			type: "GET",
-			url: "https://smileschool-api.hbtn.info/popular-tutorials",
-			success: function (data) {
-				$.each(data, function (i, popularTutorials) {
+  $(function popularTutorials() {
+    let $popularTutorials = $("#popularTutorials");
+    $.ajax({
+      type: "GET",
+      url: "https://smileschool-api.hbtn.info/popular-tutorials",
+      success: function (data) {
+        $.each(data, function (i, popularTutorials) {
 
-					$("#popularTutorials").append(`
+          $("#popularTutorials").append(`
             <div class="col-sm-6 col-md-3 mb-3">
               <div class="card mb-3 h-100 bg-transparent border-0">
                 <div class="card border-0">
@@ -68,13 +68,12 @@ $(document).ready(function () {
                   </div>
                 </div>
               </div>
-            </div>`
-					)
-				});
-			}
-		});
+            </div>`)
+        });
+      }
+    });
   });
-  
+
 
   // Homepage - latest videos
   $(function latestVideos() {
@@ -109,8 +108,7 @@ $(document).ready(function () {
                   </div>
                 </div>
               </div>
-            </div>`
-          )
+            </div>`)
         });
       }
     });
