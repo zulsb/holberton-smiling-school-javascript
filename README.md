@@ -1,3 +1,5 @@
+![SmileSchool page](https://user-images.githubusercontent.com/7723544/93664004-479c7980-fa31-11ea-8100-703aa9b315bf.gif)
+
 ## Description
 
 In this project, I implemented 3 web pages with Bootstrap and make some parts dynamic with Javascript (JQuery exactly). I used all HTML/CSS/Accessibility/Responsive design/Bootstrap/Javascript knowledges that I learned previously
@@ -11,6 +13,14 @@ and I was free to implement it the way I wanted.
 #### 3. Homepage - latest videos --> [HTML file](./homepage.html)
 #### 4. Pricing - quotes --> [HTML file](./pricing.html)
 #### 5. Courses --> [HTML file](./courses.html)
+
+#### Homepage
+![](./images/desktop-final-result.png)
+#### Pricing page
+![](./images/desktop-final-result-pricingpage.png) 
+#### Courses page
+![](./images/desktop-final-result-courses-page.png)
+
 
 ---
 
