@@ -14,11 +14,11 @@ and I was free to implement it the way I wanted.
 #### 4. Pricing - quotes --> [HTML file](./pricing.html)
 #### 5. Courses --> [HTML file](./courses.html)
 
-#### Homepage
+### Homepage
 ![](./images/desktop-final-result.png)
-#### Pricing page
+### Pricing page
 ![](./images/desktop-final-result-pricingpage.png) 
-#### Courses page
+### Courses page
 ![](./images/desktop-final-result-courses-page.png)
 
 
